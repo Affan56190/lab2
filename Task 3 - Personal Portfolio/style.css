@@ -1,0 +1,13 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:1rem/1.6 "Trebuchet MS",Arial,sans-serif;color:#1d2b3a;background:#f4f7fa}
+header{position:sticky;top:0;display:flex;justify-content:space-between;padding:16px 8%;background:#0b1f33;color:#fff}
+nav a{color:#c9d6e3;margin-left:22px;text-decoration:none}nav a:hover{color:#ffb703}
+.hero{padding:110px 8% 90px;background:#0b1f33;color:#fff}.hero p{color:#ffb703;margin:0}
+.hero h1{max-width:14em;font-size:clamp(2rem,5vw,3.6rem);line-height:1.1;margin:12px 0 28px}
+.btn{display:inline-block;background:#ffb703;color:#0b1f33;padding:12px 26px;border-radius:30px;font-weight:700;text-decoration:none}
+section:not(.hero){padding:60px 8%;max-width:1100px;margin:auto}h2{border-left:6px solid #ffb703;padding-left:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+article{background:#fff;padding:22px;border-radius:12px;border-top:4px solid #0b1f33;box-shadow:0 4px 14px #0b1f3318;transition:transform .2s}
+article:hover{transform:translateY(-6px)}
+.tags span{display:inline-block;background:#0b1f33;color:#fff;padding:6px 16px;border-radius:20px;margin:0 8px 8px 0}
+footer{text-align:center;padding:24px;background:#0b1f33;color:#9fb2c6}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semester Hub</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<input type="radio" name="v" id="v1" checked><input type="radio" name="v" id="v2"><input type="radio" name="v" id="v3"><input type="radio" name="v" id="v4"><input type="checkbox" id="dark">
+<div class="app">
+<header><h1>Semester Hub</h1><label for="dark" class="sw" data-tip="Dark / light"><span></span></label></header>
+<nav><label for="v1">🏠 Overview</label><label for="v2">📅 Schedule</label><label for="v3">✅ Tasks</label><label for="v4">✉️ Contact</label></nav>
+<main>
+<section class="view v1"><h2>Overview</h2>
+<div class="stats"><div><b>6</b>Courses</div><div><b>5</b>Lab tasks</div><div><b>3</b>Labs a week</div></div>
+<h3>Hover or tap a card</h3>
+<div class="cards">
+<div class="flip" tabindex="0"><div class="in"><div class="f">Full Stack Web Development</div><div class="b">HTML, CSS and more<br>Lab 5, A Block</div></div></div>
+<div class="flip" tabindex="0"><div class="in"><div class="f">Artificial Intelligence</div><div class="b">Lecture + lab<br>Lab 5, A Block</div></div></div>
+<div class="flip" tabindex="0"><div class="in"><div class="f">Operating Systems</div><div class="b">Lecture + lab<br>Lab 13, C Block</div></div></div>
+<div class="flip" tabindex="0"><div class="in"><div class="f">Linear Algebra</div><div class="b">Three lectures a week</div></div></div>
+<div class="flip" tabindex="0"><div class="in"><div class="f">Design and Analysis of Algorithms</div><div class="b">Lecture Hall 01</div></div></div>
+<div class="flip" tabindex="0"><div class="in"><div class="f">Introduction to Management</div><div class="b">Two lectures a week</div></div></div>
+</div>
+<h3>Progress</h3>
+<label class="pr">Lab 2 tasks <progress value="80" max="100"></progress></label>
+<label class="pr">Semester <meter value="0.6"></meter></label>
+</section>
+<section class="view v2"><h2>Schedule</h2>
+<table><tr><th>Day</th><th>Class</th><th>Room</th></tr>
+<tr><td>Mon</td><td>Full Stack Web Development</td><td>C-205</td></tr>
+<tr><td>Tue</td><td>Operating Systems</td><td>C-206</td></tr>
+<tr><td>Wed</td><td>Design and Analysis of Algorithms</td><td>Lecture Hall 01</td></tr>
+<tr><td>Thu</td><td>Operating Systems Lab</td><td>Lab 13, C Block</td></tr>
+<tr><td>Fri</td><td>Full Stack Web Development Lab</td><td>Lab 5, A Block</td></tr></table>
+<details><summary>What is a lab day?</summary><p>Labs run three hours, from 11:00 to 2:00.</p></details>
+<details><summary>Where is Lab 5?</summary><p>A Block, used for the AI and Full Stack labs.</p></details>
+</section>
+<section class="view v3"><h2>Lab 2 tasks</h2>
+<ol class="todo">
+<li><label><input type="checkbox"><span>Class timetable</span></label></li>
+<li><label><input type="checkbox"><span>Facebook homepage</span></label></li>
+<li><label><input type="checkbox"><span>Personal portfolio</span></label></li>
+<li><label><input type="checkbox"><span>IEEE paper template</span></label></li>
+<li><label><input type="checkbox"><span>Custom UI</span></label></li>
+<li><label><input type="checkbox"><span>Push to GitHub and submit the link</span></label></li></ol>
+</section>
+<section class="view v4"><h2>Contact</h2>
+<form onsubmit="return false"><div class="row2">
+<div class="fl"><input id="n" placeholder=" " required><label for="n">Your name</label></div>
+<div class="fl"><input id="e" type="email" placeholder=" " required><label for="e">Email</label></div></div>
+<div class="fl"><textarea id="m" rows="3" placeholder=" " required></textarea><label for="m">Message</label></div>
+<div class="row2"><select><option>Question</option><option>Feedback</option><option>Bug report</option></select>
+<label class="rg">Priority <input type="range" min="1" max="5" value="3"></label></div>
+<div class="pills"><input type="radio" name="p" id="p1" checked><label for="p1">Email me</label><input type="radio" name="p" id="p2"><label for="p2">Call me</label></div>
+<button data-tip="Demo only">Send message</button></form>
+</section>
+</main></div></body></html>

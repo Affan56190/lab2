@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IEEE Paper Template</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="page">
+<h1>Detecting AI-Generated Images with a Fine-Tuned ResNet18</h1>
+<p class="au"><b>Affan</b><br>Department of Computer Science, Air University<br>Islamabad, Pakistan</p>
+<div class="cols">
+<p class="abs"><b><i>Abstract</i>—</b>This paper describes a compact classifier that separates real photographs from AI-generated images. A ResNet18 network pre-trained on ImageNet is fine-tuned on the CIFAKE dataset. The report explains the data pipeline, training setup and evaluation approach.</p>
+<p class="abs"><b><i>Index Terms</i>—</b>deep learning, image classification, ResNet, synthetic images.</p>
+<h2>I. Introduction</h2><p>Generative models now produce images that are hard to tell from real photographs. Automatic detectors help verify visual content. This work builds a small detector that can be trained on modest hardware.</p>
+<h2>II. Method</h2><p>A. <i>Dataset.</i> CIFAKE [1] contains real and synthetic images labelled in two classes.</p><p>B. <i>Model.</i> The final layer of ResNet18 [2] is replaced by a two-class layer and the network is fine-tuned with a cross-entropy loss.</p>
+<h2>III. Results</h2><p>Report accuracy, precision and recall on the test split here, and include one table or figure with a caption.</p>
+<h2>IV. Conclusion</h2><p>Fine-tuning a small pre-trained network is a practical starting point for synthetic image detection. Future work can test other generators.</p>
+<h2>References</h2>
+<ol><li>J. J. Bird and A. Lotfi, "CIFAKE: Image classification and explainable identification of AI-generated synthetic images," <i>IEEE Access</i>, vol. 12, 2024.</li>
+<li>K. He, X. Zhang, S. Ren and J. Sun, "Deep residual learning for image recognition," in <i>Proc. IEEE CVPR</i>, 2016.</li></ol>
+</div></div></body></html>
